@@ -1,13 +1,13 @@
 #If VBA7 Then
-    Private Declare PtrSafe Sub fibonacci_init Lib "C:\Users\offsec\source\repos\MathLibrary\ext_VBACallCustomDocumentedDLL\MathLibrary.dll" (ByVal a As LongLong, ByVal b As LongLong)
-    Private Declare PtrSafe Function fibonacci_next Lib "C:\Users\offsec\source\repos\MathLibrary\ext_VBACallCustomDocumentedDLL\MathLibrary.dll" () As Boolean
-    Private Declare PtrSafe Function fibonacci_current Lib "C:\Users\offsec\source\repos\MathLibrary\ext_VBACallCustomDocumentedDLL\MathLibrary.dll" () As LongLong
-    Private Declare PtrSafe Function fibonacci_index Lib "C:\Users\offsec\source\repos\MathLibrary\ext_VBACallCustomDocumentedDLL\MathLibrary.dll" () As Long
+    Private Declare PtrSafe Sub fibonacci_init Lib "C:\Users\offsec\source\rt_templates\VBACallCustomDocumentedDLL\MathLibrary.dll" (ByVal a As LongLong, ByVal b As LongLong)
+    Private Declare PtrSafe Function fibonacci_next Lib "C:\Users\offsec\source\rt_templates\VBACallCustomDocumentedDLL\MathLibrary.dll" () As Boolean
+    Private Declare PtrSafe Function fibonacci_current Lib "C:\Users\offsec\source\rt_templates\VBACallCustomDocumentedDLL\MathLibrary.dll" () As LongLong
+    Private Declare PtrSafe Function fibonacci_index Lib "C:\Users\offsec\source\rt_templates\VBACallCustomDocumentedDLL\MathLibrary.dll" () As Long
 #Else
-    Private Declare Sub fibonacci_init Lib "C:\Users\offsec\source\repos\MathLibrary\ext_VBACallCustomDocumentedDLL" (ByVal a As LongLong, ByVal b As LongLong)
-    Private Declare Function fibonacci_next Lib "C:\Users\offsec\source\repos\MathLibrary\ext_VBACallCustomDocumentedDLL" () As Boolean
-    Private Declare Function fibonacci_current Lib "C:\Users\offsec\source\repos\MathLibrary\ext_VBACallCustomDocumentedDLL" () As LongLong
-    Private Declare Function fibonacci_index Lib "C:\Users\offsec\source\repos\MathLibrary\ext_VBACallCustomDocumentedDLL" () As Long
+    Private Declare Sub fibonacci_init Lib "C:\Users\offsec\source\rt_templates\VBACallCustomDocumentedDLL\MathLibrary.dll" (ByVal a As LongLong, ByVal b As LongLong)
+    Private Declare Function fibonacci_next Lib "C:\Users\offsec\source\rt_templates\VBACallCustomDocumentedDLL\MathLibrary.dll" () As Boolean
+    Private Declare Function fibonacci_current Lib "C:\Users\offsec\source\rt_templates\VBACallCustomDocumentedDLL\MathLibrary.dll" () As LongLong
+    Private Declare Function fibonacci_index Lib "C:\Users\offsec\source\rt_templates\VBACallCustomDocumentedDLL\MathLibrary.dll" () As Long
 #End If
 
 
