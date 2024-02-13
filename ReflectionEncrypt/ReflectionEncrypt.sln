@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReflectionEncrypt", "Reflec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryEncryptor", "BinaryEncryptor\BinaryEncryptor.csproj", "{501560A1-2BB9-4015-98B0-E4BD927881EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseTCP", "ReverseTCP\ReverseTCP.csproj", "{AAB77DC4-789C-4C3F-8058-2AC6DA4ABDCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{501560A1-2BB9-4015-98B0-E4BD927881EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{501560A1-2BB9-4015-98B0-E4BD927881EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{501560A1-2BB9-4015-98B0-E4BD927881EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB77DC4-789C-4C3F-8058-2AC6DA4ABDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB77DC4-789C-4C3F-8058-2AC6DA4ABDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB77DC4-789C-4C3F-8058-2AC6DA4ABDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB77DC4-789C-4C3F-8058-2AC6DA4ABDCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

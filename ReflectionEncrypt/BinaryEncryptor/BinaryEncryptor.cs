@@ -3,14 +3,14 @@ using System.Reflection;
 using System.Text;
 using System.Security.Cryptography;
 
-namespace BinaryEncryptor
+namespace ReflectionEncrypt
 {
     public class BinaryEncryptor
     {
         public static void SaveToFile(byte[] bytes, byte[] key, byte[] IV, String filename)
         {
             StringBuilder hex = new StringBuilder(bytes.Length * 6 + 1000); // 0xd420
-            hex.Append("// Encrypted: ");
+            hex.Append("// Encrypted:\n");
             hex.Append("byte[] bytes = [");
 
             int i = 0;
