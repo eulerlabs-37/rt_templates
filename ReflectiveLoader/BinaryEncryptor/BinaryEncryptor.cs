@@ -7,7 +7,7 @@ namespace ReflectiveLoader
 {
     public class BinaryEncryptor
     {
-        public static void SaveToFile(byte[] bytes, byte[] key, byte[] IV, String filename, bool generateCode = false)
+        public static void GenerateArtifacts(byte[] bytes, byte[] key, byte[] IV, String filename, bool generateCode = false)
         {
             String keyFile = filename + ".key";
             String IVFile = filename + ".IV";

@@ -18,7 +18,6 @@ namespace ReflectiveLoader
          * as name states must be called before main */
         private static void preMainInit(String host, int port)
         {
-            Console.WriteLine("====== preMainInit");
             _host = host;
             _port = port;
         }

