@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectiveLoader", "ReflectiveLoader\ReflectiveLoader.csproj", "{7337859F-A699-4C00-83FF-40939E3857A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryEncryptor", "BinaryEncryptor\BinaryEncryptor.csproj", "{774847B8-154A-45D6-ACC2-489CB1CA5E2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseTCPNonCore", "ReverseTCPNonCore\ReverseTCPNonCore.csproj", "{469E8A25-1FAD-446C-8FCB-FBBF7EC29541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLibraryCS", "MathLibraryCS\MathLibraryCS.csproj", "{FE888C58-A2B8-4553-B7A0-C145F93B5262}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7337859F-A699-4C00-83FF-40939E3857A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7337859F-A699-4C00-83FF-40939E3857A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7337859F-A699-4C00-83FF-40939E3857A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7337859F-A699-4C00-83FF-40939E3857A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{774847B8-154A-45D6-ACC2-489CB1CA5E2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774847B8-154A-45D6-ACC2-489CB1CA5E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774847B8-154A-45D6-ACC2-489CB1CA5E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774847B8-154A-45D6-ACC2-489CB1CA5E2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{469E8A25-1FAD-446C-8FCB-FBBF7EC29541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{469E8A25-1FAD-446C-8FCB-FBBF7EC29541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{469E8A25-1FAD-446C-8FCB-FBBF7EC29541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{469E8A25-1FAD-446C-8FCB-FBBF7EC29541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE888C58-A2B8-4553-B7A0-C145F93B5262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE888C58-A2B8-4553-B7A0-C145F93B5262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE888C58-A2B8-4553-B7A0-C145F93B5262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE888C58-A2B8-4553-B7A0-C145F93B5262}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBE09C4F-5958-4B3A-BADC-F19CF6E0E7FC}
+	EndGlobalSection
+EndGlobal

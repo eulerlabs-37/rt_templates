@@ -3,44 +3,52 @@ using System.Reflection;
 using System.Text;
 using System.Security.Cryptography;
 
-namespace ReflectionEncrypt
+namespace ReflectiveLoader
 {
     public class BinaryEncryptor
     {
-        public static void SaveToFile(byte[] bytes, byte[] key, byte[] IV, String filename)
+        public static void SaveToFile(byte[] bytes, byte[] key, byte[] IV, String filename, bool generateCode = false)
         {
-            StringBuilder hex = new StringBuilder(bytes.Length * 6 + 1000); // 0xd420
-            hex.Append("// Encrypted:\n");
-            hex.Append("byte[] bytesEncr = [");
+            String keyFile = filename + ".key";
+            String IVFile = filename + ".IV";
 
-            int i = 0;
-            for (; i < (bytes.Length - 1); i++)
+
+            if (generateCode)
             {
-                if (i % 16 == 0) hex.Append("\n\t\t");
-                hex.AppendFormat("0x{0:x2}, ", bytes[i]);
+                StringBuilder hex = new StringBuilder(bytes.Length * 6 + 1000); // TODO: fix this mess urgently
+                String generatedCodeFile = filename + ".cs";
+
+                int i = 0;
+
+                hex.AppendFormat("byte[] key = [");
+                for (; i < (key.Length - 1); i++)
+                {
+                    hex.AppendFormat("0x{0:x2}, ", key[i]);
+                }
+                hex.AppendFormat("0x{0:x2}];\n\n", key[i]);
+
+                hex.AppendFormat("byte[] IV = [");
+                for (i = 0; i < (IV.Length - 1); i++)
+                {
+                    hex.AppendFormat("0x{0:x2}, ", IV[i]);
+                }
+                hex.AppendFormat("0x{0:x2}];\n\n", IV[i]);
+
+
+                hex.Append("byte[] bytesEncr = [");
+                for (i = 0; i < (bytes.Length - 1); i++)
+                {
+                    if (i % 16 == 0) hex.Append("\n\t\t");
+                    hex.AppendFormat("0x{0:x2}, ", bytes[i]);
+                }
+                hex.AppendFormat("0x{0:x2}];\n\n", bytes[i]);
+
+                File.WriteAllText(generatedCodeFile, hex.ToString());
             }
-            hex.AppendFormat("0x{0:x2}];\n\n", bytes[i]);
 
-
-            hex.AppendFormat("byte[] key = [");
-            for (i = 0; i < (key.Length - 1); i++)
-            {
-                hex.AppendFormat("0x{0:x2}, ", key[i]);
-            }
-            hex.AppendFormat("0x{0:x2}];\n", key[i]);
-
-
-            hex.AppendFormat("byte[] IV = [");
-            for (i = 0; i < (IV.Length - 1); i++)
-            {
-                hex.AppendFormat("0x{0:x2}, ", IV[i]);
-            }
-
-            hex.AppendFormat("0x{0:x2}];\n", IV[i]);
-
-
-            Console.WriteLine(hex.ToString());
-            File.WriteAllText(filename, hex.ToString());
+            File.WriteAllBytes(filename, bytes);
+            File.WriteAllBytes(keyFile, key);
+            File.WriteAllBytes(IVFile, IV);
         }
 
         public static byte[] GenerateRandomKey()

@@ -4,20 +4,20 @@ using System.Reflection;
 
 namespace MathLibraryCS
 {
-    public class MathLibrary
+    public class MathLibraryCS
     {
         int previous_;  // Previous value, if any
         int current_;   // Current sequence value
-        int index_;               // Current seq. position
+        int index_;     // Current seq. position
 
-        public MathLibrary()
+        public MathLibraryCS()
         {
             index_ = 0;
             current_ = 1;
             previous_ = 1; // see special case when initialized
         }
 
-        private MathLibrary(int previous, int current)
+        private MathLibraryCS(int previous, int current)
         {
             index_ = 0;
             current_ = current;
