@@ -5,9 +5,11 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReflectionEncrypt", "ReflectionEncrypt\ReflectionEncrypt.csproj", "{090E4DAA-89DD-4566-9186-D2F4CB77EE69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryEncryptor", "BinaryEncryptor\BinaryEncryptor.csproj", "{501560A1-2BB9-4015-98B0-E4BD927881EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryEncryptor", "BinaryEncryptor\BinaryEncryptor.csproj", "{501560A1-2BB9-4015-98B0-E4BD927881EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseTCP", "ReverseTCP\ReverseTCP.csproj", "{AAB77DC4-789C-4C3F-8058-2AC6DA4ABDCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLibraryCS", "MathLibraryCS\MathLibraryCS.csproj", "{4F693736-2E0F-46D5-8954-E3CAEA0D4599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseTCP", "ReverseTCP\ReverseTCP.csproj", "{56C9FF47-77F3-44F6-B505-ED5019D9F9DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +25,14 @@ Global
 		{501560A1-2BB9-4015-98B0-E4BD927881EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{501560A1-2BB9-4015-98B0-E4BD927881EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{501560A1-2BB9-4015-98B0-E4BD927881EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AAB77DC4-789C-4C3F-8058-2AC6DA4ABDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AAB77DC4-789C-4C3F-8058-2AC6DA4ABDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AAB77DC4-789C-4C3F-8058-2AC6DA4ABDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AAB77DC4-789C-4C3F-8058-2AC6DA4ABDCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F693736-2E0F-46D5-8954-E3CAEA0D4599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F693736-2E0F-46D5-8954-E3CAEA0D4599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F693736-2E0F-46D5-8954-E3CAEA0D4599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F693736-2E0F-46D5-8954-E3CAEA0D4599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C9FF47-77F3-44F6-B505-ED5019D9F9DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C9FF47-77F3-44F6-B505-ED5019D9F9DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C9FF47-77F3-44F6-B505-ED5019D9F9DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C9FF47-77F3-44F6-B505-ED5019D9F9DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,7 +11,7 @@ namespace ReflectionEncrypt
         {
             StringBuilder hex = new StringBuilder(bytes.Length * 6 + 1000); // 0xd420
             hex.Append("// Encrypted:\n");
-            hex.Append("byte[] bytes = [");
+            hex.Append("byte[] bytesEncr = [");
 
             int i = 0;
             for (; i < (bytes.Length - 1); i++)

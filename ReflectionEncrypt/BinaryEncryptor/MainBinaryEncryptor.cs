@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ReflectionEncrypt
 {
-    internal class Programm
+    internal class MainBinaryEncryptor
     {
-        const String DLLPATH = "C:\\Users\\offsec\\source\\rt_templates\\ReflectionEncrypt\\MathLibraryCS.dll";
+        const String DLLPATH = "C:\\Users\\offsec\\source\\rt_templates\\ReflectionEncrypt\\MathLibraryCS\\bin\\Release\\net8.0\\MathLibraryCS.dll";
 
         static void Main(string[] args) {
             string dllPath = DLLPATH;
